@@ -124,7 +124,7 @@ Julie.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
     if (!!message.mention && message.mention[0] == '917994873071@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/stickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['Tedzoser','asena','ayin','back','Back','Bot','fuck','Fuck','Hehe','Hello','Hlo','Kill','kill','kiss','line','love','mwolu','Mwolu','single','tha','thund','z','Z','bie','Bie','Kaztro','Sad','Poocha','Poda','Bomb','Ayin','Ariyo','Alone','Pubg','Pes','Bgmi','Ff','Free fire','chavanam','Manassilayo','Kodathi','Kollum','vatt','Gaanam','Single','Ajuser','Xxxtentacion','Aa','Pottan','Budhi','Love','Njan','Mazha','Hi','Vella','Patt','Colour','Hacker','Ok','tts','Hack','Hii']
+const array = ['Tedzoser','asena','ayin','back','Back','Bot','fuck','Fuck','Hehe','Hello','Hlo','Kill','kill','kiss','line','love','mwolu','Mwolu','single','tha','thund','z','Z','bie','Bie','Kaztro','Sad','Poocha','Poda','Bomb','Ayin','Ariyo','Alone','Pubg','Pes','Bgmi','Ff','Free fire','chavanam','Manassilayo','Kodathi','Kollum','vatt','Gaanam','Single','Tedzoser','Xxxtentacion','Aa','Pottan','Budhi','Love','Njan','Mazha','Hi','Vella','Patt','Colour','Hacker','Ok','tts','Hack','Hii']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
