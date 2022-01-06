@@ -12,10 +12,10 @@ if (Config.WORKTYPE == 'private') {
         }
 
         if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*AJUSER created by aju*' , MessageType.text);
+            await message.client.sendMessage(message.jid,'*TEDZO SIR created by aSLU*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.OWNER + '\n AJUSER created by aju', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.OWNER + '\n TEDZOSER created by aslu', MessageType.text);
         }
     }));
 }
@@ -33,7 +33,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid,'*AJUSER created by aju*' , MessageType.text);
         }
         else {
-            await message.client.sendMessage(message.jid,Config.OWNER + '\n AJUSER created by aju', MessageType.text);
+            await message.client.sendMessage(message.jid,Config.OWNER + '\n TEDZOSER created by aslu', MessageType.text);
         }
     }));
 }
